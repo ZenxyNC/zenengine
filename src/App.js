@@ -5,7 +5,7 @@ export default function App() {
 
   return (
     <>
-      <Router>
+      <Router basename="/zenengine">
         <Routes>
           <Route path="/*"  element={<Landing />} />
         </Routes>
