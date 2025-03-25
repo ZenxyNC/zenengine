@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/zenengine/static/css/main.e4db40cb.css",
-    "main.js": "/zenengine/static/js/main.25a78c1f.js",
+    "main.js": "/zenengine/static/js/main.c00844bf.js",
     "static/js/453.e9972ca7.chunk.js": "/zenengine/static/js/453.e9972ca7.chunk.js",
     "static/media/PlusJakartaSans-SemiBold.ttf": "/zenengine/static/media/PlusJakartaSans-SemiBold.cf92107f36f071f6384c.ttf",
     "static/media/PlusJakartaSans-Medium.ttf": "/zenengine/static/media/PlusJakartaSans-Medium.f78ffc04acb877ce387e.ttf",
@@ -17,11 +17,11 @@
     "static/media/arrow 1.svg": "/zenengine/static/media/arrow 1.2a3dedccee3b4d2174e0.svg",
     "static/media/faster.svg": "/zenengine/static/media/faster.2fad48a8539d64ad12df.svg",
     "main.e4db40cb.css.map": "/zenengine/static/css/main.e4db40cb.css.map",
-    "main.25a78c1f.js.map": "/zenengine/static/js/main.25a78c1f.js.map",
+    "main.c00844bf.js.map": "/zenengine/static/js/main.c00844bf.js.map",
     "453.e9972ca7.chunk.js.map": "/zenengine/static/js/453.e9972ca7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e4db40cb.css",
-    "static/js/main.25a78c1f.js"
+    "static/js/main.c00844bf.js"
   ]
 }
