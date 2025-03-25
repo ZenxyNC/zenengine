@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/zenengine/static/css/main.e4db40cb.css",
+    "main.js": "/zenengine/static/js/main.25a78c1f.js",
+    "static/js/453.e9972ca7.chunk.js": "/zenengine/static/js/453.e9972ca7.chunk.js",
+    "static/media/PlusJakartaSans-SemiBold.ttf": "/zenengine/static/media/PlusJakartaSans-SemiBold.cf92107f36f071f6384c.ttf",
+    "static/media/PlusJakartaSans-Medium.ttf": "/zenengine/static/media/PlusJakartaSans-Medium.f78ffc04acb877ce387e.ttf",
+    "static/media/PlusJakartaSans-Light.ttf": "/zenengine/static/media/PlusJakartaSans-Light.6c8e1d7ccc92d1bf041b.ttf",
+    "static/media/PlusJakartaSans-ExtraBold.ttf": "/zenengine/static/media/PlusJakartaSans-ExtraBold.c3c2ec0cc06a27366227.ttf",
+    "static/media/PlusJakartaSans-Bold.ttf": "/zenengine/static/media/PlusJakartaSans-Bold.542d4930de15d99be736.ttf",
+    "static/media/PlusJakartaSans-Regular.ttf": "/zenengine/static/media/PlusJakartaSans-Regular.8b8f90ab0e945b1e795a.ttf",
+    "static/media/cog.svg": "/zenengine/static/media/cog.4a724ece4b30815094ed.svg",
+    "static/media/docs.svg": "/zenengine/static/media/docs.4686f2587111de0c6b16.svg",
+    "static/media/cleaner-code.svg": "/zenengine/static/media/cleaner-code.d61f4af86799d2a9f6c1.svg",
+    "index.html": "/zenengine/index.html",
+    "static/media/modules.svg": "/zenengine/static/media/modules.0c6172859bfed26be2f8.svg",
+    "static/media/arrow 1.svg": "/zenengine/static/media/arrow 1.2a3dedccee3b4d2174e0.svg",
+    "static/media/faster.svg": "/zenengine/static/media/faster.2fad48a8539d64ad12df.svg",
+    "main.e4db40cb.css.map": "/zenengine/static/css/main.e4db40cb.css.map",
+    "main.25a78c1f.js.map": "/zenengine/static/js/main.25a78c1f.js.map",
+    "453.e9972ca7.chunk.js.map": "/zenengine/static/js/453.e9972ca7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e4db40cb.css",
+    "static/js/main.25a78c1f.js"
+  ]
+}
