@@ -2,7 +2,6 @@ html {
   background-color: #212832;
   overflow-x: hidden !important;
   width: 100vw;
-  height: unset
 }
 
 .--text-zenengine {
@@ -19,6 +18,8 @@ html {
   height: 100vh;
 
   position: relative;
+
+  z-index: 100
 }
 
 .maindiv-content {
@@ -46,25 +47,9 @@ html {
   z-index: -999;
 }
 
-#mainDiv-3 {
-  background-color: #060606;
-}
-
-#mainDiv-2 {
-  background-image: linear-gradient(
-    0deg,
-    hsl(0deg 0% 2%) 2%,
-    hsl(217deg 12% 6%) 8%,
-    hsl(217deg 13% 9%) 13%,
-    hsl(216deg 16% 11%) 20%,
-    hsl(216deg 19% 14%) 35%,
-    hsl(215deg 20% 16%) 87%
-  );
-}
-
 #bubbleWrapper {
   width: 100vw;
-  height: 200vh;
+  height: 300vh;
 
   background-color: transparent;
 
@@ -72,8 +57,11 @@ html {
   top: 0px;
   left: 0px;
 
-  z-index: 0;
-  overflow: hidden;
+  z-index: 10;
+
+  pointer-events: none;
+
+  overflow-x: hidden;
 }
 
 .bubble {
@@ -97,16 +85,40 @@ html {
   filter: blur(200px);
 }
 
+.--007AFF-2 {
+  width: 300px;
+  height: 300px;
+
+  background-color: rgba(0, 123, 255, 0.8);
+
+  top: 260vh;
+  left: -300px;
+
+  filter: blur(200px);
+}
+
 .--273444 {
   width: 400px;
   height: 400px;
 
   background-color: rgb(39, 52, 68, 0.9);
 
-  top: 200%;
+  top: 80vh;
   left: -200px;
 
   filter: blur(80px);
+}
+
+.--7200F4 {
+  width: 200px;
+  height: 200px;
+
+  background-color: rgb(114, 0, 244, 0.9);
+
+  top: 180vh;
+  right: -100px;
+
+  filter: blur(120px);
 }
 
 #mainDiv1-title {
@@ -393,7 +405,7 @@ html {
   width: 50%;
   height: 70vw;
 
-  background-color: rgb(33, 40, 50, 0.4);
+  background-color: rgb(39, 52, 68);
   backdrop-filter: blur(10px);
 
   border-radius: 20px;
@@ -472,6 +484,23 @@ html {
 }
 
 @media screen and (min-width: 1050px) {
+  #bubbleWrapper {
+    width: 100vw;
+    height: 100vh;
+
+    min-height: 200vh;
+  
+    background-color: transparent;
+  
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  
+    z-index: 10;
+
+    overflow-x: unset;
+  }
+
   .--007AFF {
     width: 600px;
     height: 600px;
@@ -480,6 +509,18 @@ html {
   
     top: -320px;
     right: -320px;
+  
+    filter: blur(250px);
+  }
+
+  .--007AFF-2 {
+    width: 400px;
+    height: 400px;
+  
+    background-color: rgba(0, 123, 255, 0.8);
+  
+    top: 250vh;
+    left: -320px;
   
     filter: blur(250px);
   }
@@ -494,6 +535,18 @@ html {
     left: -320px;
   
     filter: blur(130px);
+  }
+
+  .--7200F4 {
+    width: 400px;
+    height: 400px;
+  
+    background-color: rgb(114, 0, 244, 0.9);
+  
+    top: 170vh;
+    right: -100px;
+  
+    filter: blur(200px);
   }
 
   #mainDiv1-title {
@@ -716,7 +769,7 @@ html {
     width: 300px;
     height: 400px;
   
-    background-color: rgb(33, 40, 50, 0.4);
+    background-color: #273444 ;
     backdrop-filter: blur(10px);
   
     border-radius: 25px;

@@ -1,0 +1,16 @@
+.canvasElem-maindiv {
+  position: relative;
+
+  width: calc(60% - 30px);
+  height: max-content;
+
+  min-height: 100px;
+
+
+  padding: 5px 15px 5px 15px;
+
+  background-color: transparent;
+
+  border: 3px solid #273444;
+  border-radius: 25px;
+}

@@ -3,7 +3,6 @@ import '../resource/font/importFont.css'
 
 //Components
 import Squares from './component/squares/squares';
-import Particles from './component/particles/particles';
 
 
 export default function Landing() {
@@ -13,6 +12,8 @@ export default function Landing() {
       <div id='bubbleWrapper'>
         <div className='bubble --007AFF'></div>
         <div className='bubble --273444'></div>
+        <div className='bubble --7200F4'></div>
+        <div className='bubble --007AFF-2'></div>
       </div>
 
 
@@ -77,18 +78,7 @@ export default function Landing() {
       </div>
 
       <div id='mainDiv-3' className='maindiv'>
-        <div id='particles-background'>
-          <Particles
-            particleColors={['#007AFF', '#7200F4']}
-            particleCount={200}
-            particleSpread={10}
-            speed={0.1}
-            particleBaseSize={130}
-            moveParticlesOnHover={true}
-            alphaParticles={false}
-            disableRotation={false}
-          />
-        </div>
+
         <div id="mainDiv3-content">
           <div id='mainDiv3-card'>
             <div className='mainDiv3-cardImage --docs-image'></div>
