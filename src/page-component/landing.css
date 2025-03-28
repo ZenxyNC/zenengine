@@ -4,6 +4,10 @@ html {
   width: 100vw;
 }
 
+html::-webkit-scrollbar {
+  width: 0px
+}
+
 .--text-zenengine {
   font-family: _extrabold;
 

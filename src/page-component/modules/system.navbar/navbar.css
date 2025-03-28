@@ -4,8 +4,8 @@
 
   max-width: 700px;
 
-  background-color: rgb(39, 52, 68, 0.5);
-  backdrop-filter: blur(30px);
+  background-color: rgb(39, 52, 68, 0.4);
+  backdrop-filter: blur(10px);
 
   position: fixed;
   top: 10px;
@@ -50,15 +50,34 @@
   left: 0px;
 }
 
+#navbar-openSidebar { 
+  width: 35px;
+  height: 35px;
+
+  background-image: url('../../../resource/menu.svg');
+  background-size: cover;
+  background-position: center;
+
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  cursor: pointer
+}
+
 @media screen and (min-width: 1050px) {
+  #navbar-openSidebar { 
+    display: none
+  }
   #navbar-body {
     width: 100%;
     height: 70px;
   
     max-width: unset;
   
-    background-color: rgb(39, 52, 68, 0.5);
-    backdrop-filter: blur(30px);
+    background-color: rgb(39, 52, 68, 0.3);
+    backdrop-filter: blur(15px);
   
     position: fixed;
     top: 0px;

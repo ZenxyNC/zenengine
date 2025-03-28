@@ -3,9 +3,11 @@ import '../resource/font/importFont.css'
 
 //Components
 import Squares from './component/squares/squares';
+import { useNavigate } from 'react-router-dom';
 
 
 export default function Landing() {
+  const navigate = useNavigate();
 
   return (
     <>
@@ -80,7 +82,7 @@ export default function Landing() {
       <div id='mainDiv-3' className='maindiv'>
 
         <div id="mainDiv3-content">
-          <div id='mainDiv3-card'>
+          <div id='mainDiv3-card' onClick={() => navigate('/modules/')}>
             <div className='mainDiv3-cardImage --docs-image'></div>
             <div className='mainDiv3-cardImage --cog-image'></div>
             <div id='mainDiv3-cardCaption'>See Docs</div>

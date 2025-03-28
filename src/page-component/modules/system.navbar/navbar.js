@@ -11,8 +11,8 @@ export default function Navbar({ openSidebar }) {
         <div id='navbarBody-img'></div>
         <div id='navbarBody-title'>ZenEngine</div>
       </div>
-      <div onClick={openSidebar}>
-        Open Sidebar
+      <div onClick={openSidebar} id='navbar-openSidebar'>
+        
       </div>
     </div>
   )
