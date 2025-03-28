@@ -27,6 +27,35 @@
   transition: 0.65s !important;
 }
 
+.canvasElem-preview {
+  position: relative;
+
+  width: calc(100% - 40px);
+  height: max-content;
+
+  min-height: 300px;
+
+  padding: 10px 15px 15px 15px;
+  margin-bottom: 20px;
+
+  background-color: transparent;
+
+  border: 3px solid #273444;
+  border-radius: 25px;
+
+  white-space: wrap;
+
+  font-family: _regular;
+  font-size: 18px;
+  color: #F5F5F5;
+  word-spacing: 4px;
+  line-height: 23px;
+
+  overflow: hidden;
+
+  transition: 0.65s !important;
+}
+
 .canvasElem-maindiv::-webkit-scrollbar {
   display: none;
 }
@@ -114,7 +143,7 @@ pre[class*="language-"] {
 
 
 
-@media screen and (min-width: 1050px) {
+@media screen and (min-width: 1000px) {
   .canvasElem-maindiv {
     position: relative;
   
@@ -142,8 +171,57 @@ pre[class*="language-"] {
     transition: 0.65s !important;
   }
 
+  .canvasElem-preview {
+    position: relative;
+  
+    width: calc(70% - 30px);
+    height: max-content;
+  
+    min-height: 300px;
+  
+    padding: 10px 15px 15px 15px;
+    margin-bottom: 10px;
+  
+    background-color: transparent;
+  
+    border: 3px solid #273444;
+    border-radius: 25px;
+  
+    white-space: wrap;
+  
+    font-family: _regular;
+    font-size: 18px;
+    color: #F5F5F5;
+    word-spacing: 5px;
+    line-height: 25px;
+
+    transition: 0.65s !important;
+  }
+
   .--explanation {
     margin-bottom: 20px !important;
     line-height: 23px;
   }
+}
+
+
+/*Addition*/
+.sayHello-button {
+  width: 200px;
+  height: 50px;
+
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  border-radius: 100px;
+  border: none;
+
+  background-color: #273444;
+
+  color: #F5F5F5;
+  font-family: _bold;
+  font-size: 20px
 }

@@ -182,7 +182,7 @@ function Code() {
       </div>
 
       <div className='canvasElem-title'>Explanation</div>
-      <div className={`canvasElem-maindiv --explanation ${codeExpanded ? 'expanded' : ''}`}>
+      <div className={`canvasElem-maindiv --explanation`}>
         Make your own event handler in your project, based on your need purpose. The example is in "Call" section.<br /><div className='--par-space'></div><br/>
 
         The variable needed:<br />

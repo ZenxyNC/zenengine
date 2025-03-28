@@ -5,6 +5,7 @@ import './modules.css'
 import { useEffect, useState } from "react";
 
 import { Crud } from "./system.modules/CRUD/crud";
+import { Snackbar } from "./system.modules/Snackbar/snackbar"
 
 export default function Modules() {
   const [isSidebar, setIsSidebar] = useState(false);
@@ -54,6 +55,7 @@ export default function Modules() {
         </div>
         <div id="modulesBody-canvas">
           {selectedItem === 'crudprotocol' ? Crud(selectedTab) : ''}
+          {selectedItem === 'snackbar' ? Snackbar(selectedTab) : ''}
         </div>
       </div>
     </>
