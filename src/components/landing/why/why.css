@@ -1,0 +1,239 @@
+
+@keyframes animateBox {
+  0% {
+    opacity: 0;
+    scale: 0.7
+  }
+  100% {
+    opacity: 1;
+    scale: 1
+  }
+}
+
+.default-whybox {
+  width: calc(100% - (30px + 30px) -(20px + 20px)) /*viewport - (left margin + right margin) -(left padding + right padding)*/;
+  height: max-content;
+  min-height: 120px;
+
+  padding: 20px;
+  margin-bottom: 20px;
+
+  background-color: var(--secondary);
+
+  border-radius: 20px;
+  
+  font-family: "PlusJakarta";
+  font-weight: 500;
+  font-size: 16px;
+
+  position: relative;
+
+  animation: animateBox linear both;
+  animation-timeline: scroll();
+  animation-range: entry 0% exit 60%;
+
+  cursor:default
+}
+
+.iconned-whybox {
+  width: calc(100% - 4px) /*viewport - border*/;
+  height: 100px;
+  min-height: 120px;
+
+  margin-bottom: 20px;
+
+  background-color: var(--secondary);
+
+  border-radius: 20px;
+  
+  font-family: "PlusJakarta";
+  font-weight: 500;
+  font-size: 16px;
+
+  position: relative;
+
+  transition: 0.45s;
+  
+  animation: animateBox linear forwards;
+  animation-timeline: scroll();
+  animation-range: entry 0% exit 60%;
+
+  cursor:default;
+} 
+
+.iconned-whybox img {
+  height: 120%;
+  position: absolute;
+}
+
+.iconned-whybox .time-efficient-icon {
+  top: 50%;
+  transform: translateY(-50%);
+  left: -70px
+}
+.iconned-whybox .time-efficient-text {
+  position: absolute;
+  font-size: 32px;
+  font-weight: 600;
+
+  left: calc(70px + 20px);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.iconned-whybox .modules-icon {
+  top: 50%;
+  transform: translateY(-50%);
+  right: -70px
+}
+.iconned-whybox .modules-text {
+  position: absolute;
+  font-size: 32px;
+  font-weight: 600;
+
+  right: calc(70px + 20px);
+  top: 50%;
+  transform: translateY(-50%);
+
+  text-align: right;
+}
+
+#why-maindiv {
+  width: calc(100% - 60px);
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: transparent;
+
+  margin-top: 150px
+}
+
+@media screen and (min-width: 810px) {
+  .default-whybox {
+    width: calc(50% - 10px - (20px + 20px)) /*viewport - right margin - (left padding + right padding)*/;
+    height: max-content;
+    aspect-ratio: 1/1;
+    min-height: unset;
+
+    padding: 20px;
+    margin-bottom: 0px;
+
+    background-color: var(--secondary);
+
+    border-radius: 20px;
+    
+    font-family: "PlusJakarta";
+    font-weight: 500;
+    font-size: 20px;
+
+    position: relative;
+
+    animation: animateBox linear both;
+    animation-timeline: scroll();
+    animation-range: entry 0% exit 60%;
+  }
+
+  #why-maindiv {
+    width: 600px;
+
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: transparent;
+
+    margin-top: 150px
+  }
+
+  #whybox-wrapper {
+    width: 100%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: transparent;
+
+    display: flex;
+  }
+
+  #subbox-wrapper {
+    position: absolute;
+    width: calc(50% - 10px);
+    background-color: transparent;
+    height: 100%;
+
+    right: 0px
+  }
+
+  .iconned-whybox {
+    width: calc(100% - 4px) /*viewport - border*/;
+    height: calc(50% - 10px - 4px);
+    min-height: unset;
+
+    margin-bottom: 20px;
+
+    background-color: var(--secondary);
+
+    border-radius: 20px;
+    
+    font-family: "PlusJakarta";
+    font-weight: 500;
+    font-size: 16px;
+
+    position: relative;
+
+    transition: 0.45s;
+    
+    animation: animateBox linear forwards;
+    animation-timeline: scroll();
+    animation-range: entry 0% exit 60%;
+  } 
+
+  .iconned-whybox img {
+    width: 70%;
+    position: absolute;
+  }
+
+  .iconned-whybox .time-efficient-icon {
+    top: 50%;
+    transform: translateY(-50%);
+    left: -35%
+  }
+  .iconned-whybox .time-efficient-text {
+    position: absolute;
+    font-size: 32px;
+    font-weight: 600;
+
+    left: calc(30% + 20px);
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .iconned-whybox .modules-icon {
+    top: 50%;
+    transform: translateY(-50%);
+    right: -35%
+  }
+  .iconned-whybox .modules-text {
+    position: absolute;
+    font-size: 32px;
+    font-weight: 600;
+
+    right: calc(30% + 20px);
+    top: 50%;
+    transform: translateY(-50%);
+
+    text-align: right;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  #why-maindiv {
+    width: 700px;
+
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: transparent;
+
+    margin-top: 150px
+  }
+}

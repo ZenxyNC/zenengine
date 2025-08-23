@@ -1,0 +1,104 @@
+#status-maindiv {
+  width: calc(100svw - 60px);
+  height: max-content;
+
+  background-color: transparent;
+
+  margin-top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  position: relative;
+}
+
+@keyframes animateStatus {
+  0% {
+    opacity: 0;
+    filter: blur(10px)
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0px)
+  }
+}
+
+#statusCard-maindiv {
+  width: calc(100% - 30px - 4px);
+  height: max-content;
+  min-height: 100px;
+
+  background-color: var(--primary);
+
+  border: 2px solid var(--secondary);
+  border-radius: 20px;
+
+  position: relative;
+
+  overflow: hidden;
+
+  padding: 20px;
+  margin-bottom: 20px;
+
+  z-index: -50;
+
+  animation: animateStatus linear both;
+  animation-timeline: scroll();
+  animation-range: entry 0% exit 80%;
+}
+
+#statusCard-bubble {
+  height: 100%;
+  aspect-ratio: 1/1;
+
+  position: absolute;
+  transform: translateX(-80%);
+  top: 0px;
+
+  border-radius: 100px;
+
+  filter: blur(50px);
+
+  z-index: -40
+}
+
+#statusCard-title {
+  font-size: 20px;
+  font-weight: 700
+}
+#statusCard-status {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--font-secondary)
+}
+#statusCard-description {
+  margin-top: 20px
+}
+
+@media screen and (min-width: 810px) {
+  #status-maindiv {
+    width: calc(100svw - 60px);
+    max-width: 600px;
+    height: max-content;
+
+    background-color: transparent;
+
+    margin-top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  #status-maindiv {
+    width: calc(100svw - 60px);
+    max-width: 700px;
+    height: max-content;
+
+    background-color: transparent;
+
+    margin-top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+  }
+}

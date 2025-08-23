@@ -1,18 +1,26 @@
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
 }
 
-root {
+
+
+:root {
   --primary: #0F131A;
   --secondary: #171C23;
   --accent: #007AFF;
   --font-primary: #F5F5F5;
   --font-secondary: rgb(245, 245, 245, 0.3);
   --accent-red: #FF393D;
+  --element-yellow : #FFCC00;
+  --element-green : #11A64F
 }
 
 body {
   background-color: var(--primary);
-  color: var(--accent);
+  color: var(--font-primary);
+
+  font-family: "PlusJakarta";
+
+  overflow-x: hidden !important;
 }

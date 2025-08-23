@@ -1,0 +1,52 @@
+#seeDocs-maindiv {
+  width: calc(100% - 60px);
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: transparent;
+
+  margin-top: 100px
+}
+
+.seeDocs-title {
+  font-size: 28px;
+  font-family: "PlusJakarta";
+  margin-bottom: 30px
+}
+
+.subTitle {
+  color: var(--font-secondary);
+  font-size: 16px;
+  margin-top: -50px;
+  font-weight: 600;
+  top: -10px;
+  position: relative
+}
+
+#SeeDocs-cardContent {
+  position: absolute
+}
+
+@media screen and (min-width: 810px) {
+  #seeDocs-maindiv {
+    width: 700px;
+
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: transparent;
+
+    margin-top: 100px
+  }
+  .seeDocs-title {
+    font-size: 40px;
+    font-family: "PlusJakarta";
+    margin-bottom: 50px
+  }
+  .subTitle {
+    color: var(--font-secondary);
+    font-size: 20px;
+    top: -10px;
+    position: relative
+  }
+}

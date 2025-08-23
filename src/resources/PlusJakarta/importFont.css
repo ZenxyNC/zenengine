@@ -1,53 +1,8 @@
 @font-face {
-  font-family: _regular;
-  src: './PlusJakartaSans-Regular.otf';
+  font-family: PlusJakarta;
+  src: url('./PlusJakartaSans.ttf');
 }
 @font-face {
-  font-family: _regularitalic;
-  src: './PlusJakartaSans-Italic.otf';
-}
-
-@font-face {
-  font-family: _light;
-  src: './PlusJakartaSans-Light.otf';
-}
-@font-face {
-  font-family: _lightitalic;
-  src: './PlusJakartaSans-LightItalic.otf';
-}
-
-@font-face {
-  font-family: _medium;
-  src: './PlusJakartaSans-Medium.otf';
-}
-@font-face {
-  font-family: _mediumitalic;
-  src: './PlusJakartaSans-MediumItalic.otf';
-}
-
-@font-face {
-  font-family: _semibold;
-  src: './PlusJakartaSans-SemiBold.otf';
-}
-@font-face {
-  font-family: _semibolditalic;
-  src: './PlusJakartaSans-SemiBoldItalic.otf';
-}
-
-@font-face {
-  font-family: _bold;
-  src: './PlusJakartaSans-Bold.otf';
-}
-@font-face {
-  font-family: _bolditalic;
-  src: './PlusJakartaSans-BoldItalic.otf';
-}
-
-@font-face {
-  font-family: _extrabold;
-  src: './PlusJakartaSans-ExtraBold.otf';
-}
-@font-face {
-  font-family: _extrabolditalic;
-  src: './PlusJakartaSans-ExtraBoldItalic.otf';
+  font-family: PlusJakartaItalic;
+  src: url('./PlusJakartaSans-Italic.ttf');
 }

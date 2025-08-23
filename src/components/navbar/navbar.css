@@ -1,0 +1,261 @@
+#navbar-mainbody {
+  width: calc(100% - 40px) /*Viewport - padding left - padding right*/;
+  height: 60px;
+  
+  background-color: rgba(15, 19, 26, 0.4);
+
+  padding: 0px 20px 0px 20px;
+
+  position: fixed;
+
+  backdrop-filter: blur(30px);
+
+  z-index: 9999
+}
+
+#navbar-zenengineIcon {
+  width: 60px;
+  aspect-ratio: 1/1;
+}
+
+#navbar-zenengineName { 
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  font-size: 20px;
+  font-family: 'PlusJakarta';
+  font-weight: 700;
+
+  background-color: transparent;
+}
+
+#navbar-tryZenengine {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 140px;
+  height: 30px;
+
+  font-size: 16px;
+  font-family: 'PlusJakarta';
+  font-weight: 800;
+  color: var(--font-primary);
+
+  background-color: #007AFF;
+
+  border: 0px;
+  border-radius: 20px;
+
+  overflow: hidden;
+  cursor: pointer;
+
+  user-select: none;
+}
+
+#navbar-tryZenengine div {
+  width: 70px;
+  height: 70px;
+  border-radius: 30px;
+  position: absolute;
+  background-color: #00FFAA;
+  right: -30px;
+  bottom: 20%;
+  z-index: -999;
+  filter: blur(0px);
+  opacity: 0;
+  transition: 0.35s
+}
+
+#navbar-tryZenengine:is(:hover, :active) div {
+  width: 70px;
+  height: 70px;
+  border-radius: 30px;
+  position: absolute;
+  background-color: #00FFAA;
+  right: -20px;
+  bottom: 10%;
+  z-index: -999;
+  filter: blur(30px);
+  opacity: 1;
+  transition: 0.35s
+}
+
+/*TABLET VIEW*/
+@media screen and (min-width: 810px) {
+  #navbar-mainbody {
+    width: calc(100% - 100px - 100px) /*Viewport - padding left - padding right*/;
+    height: 60px;
+    
+    background-color: rgba(15, 19, 26, 0.4);
+
+    padding: 0px 100px 0px 100px;
+
+    position: fixed;
+
+    backdrop-filter: blur(30px);
+
+    z-index: 9999
+  }
+
+  #navbar-zenengineIcon {
+    width: 60px;
+    aspect-ratio: 1/1;
+  }
+
+  #navbar-zenengineName { 
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    font-size: 20px;
+    font-family: 'PlusJakarta';
+    font-weight: 700;
+
+    background-color: transparent;
+  }
+
+  #navbar-tryZenengine {
+    position: absolute;
+    right: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 150px;
+    height: 35px;
+
+    font-size: 16px;
+    font-family: 'PlusJakarta';
+    font-weight: 800;
+    color: var(--font-primary);
+
+    background-color: #007AFF;
+
+    border: 0px;
+    border-radius: 20px;
+
+    overflow: hidden;
+    cursor: pointer;
+
+    user-select: none;
+  }
+
+  #navbar-tryZenengine div {
+    width: 70px;
+    height: 70px;
+    border-radius: 30px;
+    position: absolute;
+    background-color: #00FFAA;
+    right: -30px;
+    bottom: 20%;
+    z-index: -999;
+    filter: blur(0px);
+    opacity: 0;
+    transition: 0.35s
+  }
+
+  #navbar-tryZenengine:is(:active, :active) div {
+    width: 70px;
+    height: 70px;
+    border-radius: 30px;
+    position: absolute;
+    background-color: #00FFAA;
+    right: -20px;
+    bottom: 10%;
+    z-index: -999;
+    filter: blur(30px);
+    opacity: 1;
+    transition: 0.35s
+  }
+}
+
+
+/*DESKTOP VIEW*/
+@media screen and (min-width: 1360px) {
+  #navbar-mainbody {
+    width: calc(100% - 150px - 150px) /*Viewport - padding left - padding right*/;
+    height: 70px;
+    
+    background-color: rgba(15, 19, 26, 0.4);
+
+    padding: 0px 150px 0px 150px;
+
+    position: fixed;
+
+    backdrop-filter: blur(30px);
+
+    z-index: 9999
+  }
+
+  #navbar-zenengineIcon {
+    width: 70px;
+    aspect-ratio: 1/1;
+  }
+
+  #navbar-zenengineName { 
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    font-size: 24px;
+    font-family: 'PlusJakarta';
+    font-weight: 700;
+
+    background-color: transparent;
+  }
+
+  #navbar-tryZenengine {
+    position: absolute;
+    right: 150px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 160px;
+    height: 40px;
+
+    font-size: 16px;
+    font-family: 'PlusJakarta';
+    font-weight: 800;
+    color: var(--font-primary);
+
+    background-color: #007AFF;
+
+    border: 0px;
+    border-radius: 20px;
+
+    overflow: hidden;
+    cursor: pointer;
+
+    user-select: none;
+  }
+
+  #navbar-tryZenengine div {
+    width: 70px;
+    height: 70px;
+    border-radius: 30px;
+    position: absolute;
+    background-color: #00FFAA;
+    right: -30px;
+    bottom: 20%;
+    z-index: -999;
+    filter: blur(0px);
+    opacity: 0;
+    transition: 0.35s
+  }
+
+  #navbar-tryZenengine:is(:active, :active) div {
+    width: 70px;
+    height: 70px;
+    border-radius: 30px;
+    position: absolute;
+    background-color: #00FFAA;
+    right: -20px;
+    bottom: 10%;
+    z-index: -999;
+    filter: blur(30px);
+    opacity: 1;
+    transition: 0.35s
+  }
+}
