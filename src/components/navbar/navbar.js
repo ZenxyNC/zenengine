@@ -1,7 +1,7 @@
 import ZenEngine from '../../resources/zenengine-noBG.svg';
 import './navbar.css'
 
-export default function Navbar() {
+export function MainNavbar() {
   
   return (
     <>

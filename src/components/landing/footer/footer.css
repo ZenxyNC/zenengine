@@ -1,0 +1,269 @@
+#footer-maindiv {
+  width: calc(100svw - 60px - 40px);
+  height: max-content;
+
+  padding: 20px;
+  margin-top: 100px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+
+  border: 1px solid var(--font-secondary);
+  border-radius: 20px
+}
+
+#footer-navigation {
+  width: 100%;
+
+  justify-content: space-between;
+  display: flex;
+}
+
+#footer-navigation button {
+  font-size: 16px;
+  color: var(--font-secondary);
+  font-weight: 500;
+  font-family: "PlusJakarta";
+
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+
+  transition: 0.35s;
+
+  user-select: none;
+}
+
+#footer-navigation button:is(:active) {
+  font-size: 16px;
+  color: var(--font-primary);
+
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+
+  transition: 0.35s
+}
+
+#footer-zenengine {
+  display: flex;
+  width: 150px;
+  background-color: transparent;
+  height: 60px;
+
+  position: relative;
+
+  margin-top: 16px;
+}
+
+#footer-zenengine img {
+  width: 60px;
+  aspect-ratio: 1/1;
+  position: absolute
+}
+
+#footer-zenengine span {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 65px;
+
+  font-family: "PlusJakarta";
+  font-weight: 700;
+  font-size: 20px
+}
+
+#footer-creator {
+  width: 100%;
+  font-family: "PlusJakarta";
+
+  margin-top: 12px
+}
+
+#footer-creator p {
+  font-style: italic;
+  font-size: 16px;
+  margin-bottom: -12px;
+  font-weight: 500;
+
+}
+#footer-creator a {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--font-primary);
+
+  text-decoration: 2px underline var(--font-primary);
+
+  user-select: none;
+  cursor: pointer;
+
+  transition: 0.35s;
+}
+
+#footer-creator a:is(:active) {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--accent);
+
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+}
+
+#footer-license {
+  font-family: "PlusJakarta";
+  font-weight: 500;
+  font-size: 16px;
+
+  margin-top: 24px
+}
+
+@media screen and (min-width: 810px) {
+  #footer-maindiv {
+    width: calc(100svw - 60px - 40px);
+    max-width: 800px;
+    height: max-content;
+    min-height: 200px;
+
+    padding: 20px;
+    margin-top: 100px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+    border: 0px solid var(--font-secondary);
+    border-top: 1px solid var(--font-secondary);
+    border-radius: 0px
+  }
+
+  #footer-navigation {
+    width: max-content;
+
+    justify-content: space-between;
+    display: flex;
+    column-gap: 48px;
+
+    position: absolute;
+    right: 20px
+  }
+
+  #footer-navigation button:is(:hover, :active) {
+    font-size: 16px;
+    color: var(--font-primary);
+
+    background-color: transparent;
+    border: none;
+
+    cursor: pointer;
+
+    transition: 0.35s
+  }
+
+  #footer-zenengine {
+    display: flex;
+    width: 150px;
+    background-color: transparent;
+    height: 60px;
+
+    position: absolute;
+
+    margin-top: unset;
+    top: 10px
+  }
+
+  #footer-zenengine img {
+    width: 60px;
+    aspect-ratio: 1/1;
+    position: absolute
+  }
+
+  #footer-zenengine span {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 65px;
+
+    font-family: "PlusJakarta";
+    font-weight: 700;
+    font-size: 20px
+  }
+
+  #footer-creator {
+    width: max-content;
+    max-width: calc(50% - 60px);
+    font-family: "PlusJakarta";
+    font-weight: 500;
+
+    position: absolute;
+    top: 90px;
+
+    background-color: transparent;
+
+    margin-top: unset;
+  }
+
+  #footer-creator p {
+    font-style: italic;
+    font-size: 16px;
+    margin-bottom: -12px
+  }
+  #footer-creator a {
+    font-size: 20px;
+    font-weight: 700
+  }
+
+  #footer-creator a:is(:active, :hover) {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--accent);
+
+    text-decoration: underline;
+    text-decoration-color: var(--accent);
+  }
+
+  #footer-license {
+    font-family: "PlusJakarta";
+    font-weight: 500;
+    font-size: 16px;
+
+    margin-top: unset;
+
+    position: absolute;
+
+    top: 90px;
+    right: 20px
+  }
+}
+
+@media screen and (min-width: 1380px) {
+  #footer-maindiv {
+    width: calc(100svw - 60px - 40px);
+    max-width: 1000px;
+    height: max-content;
+    min-height: 120px;
+
+    padding: 20px;
+    margin-top: 100px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+    border: 0px solid var(--font-secondary);
+    border-top: 1px solid var(--font-secondary);
+    border-radius: 0px;
+
+    background-color: transparent;
+  }
+
+  #footer-navigation {
+    width: max-content;
+
+    justify-content: space-between;
+    display: flex;
+    column-gap: 48px;
+
+    position: absolute;
+    right: 20px
+  }
+}

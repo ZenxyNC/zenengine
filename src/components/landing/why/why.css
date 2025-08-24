@@ -30,7 +30,7 @@
 
   animation: animateBox linear both;
   animation-timeline: scroll();
-  animation-range: entry 0% exit 60%;
+  animation-range: entry 0% exit 40%;
 
   cursor:default
 }
@@ -56,7 +56,7 @@
   
   animation: animateBox linear forwards;
   animation-timeline: scroll();
-  animation-range: entry 0% exit 60%;
+  animation-range: entry 0% exit 40%;
 
   cursor:default;
 } 
@@ -120,7 +120,7 @@
 
     background-color: var(--secondary);
 
-    border-radius: 20px;
+    border-radius: 25px;
     
     font-family: "PlusJakarta";
     font-weight: 500;
@@ -130,7 +130,7 @@
 
     animation: animateBox linear both;
     animation-timeline: scroll();
-    animation-range: entry 0% exit 60%;
+    animation-range: entry 0% exit 40%;
   }
 
   #why-maindiv {
@@ -172,7 +172,7 @@
 
     background-color: var(--secondary);
 
-    border-radius: 20px;
+    border-radius: 25px;
     
     font-family: "PlusJakarta";
     font-weight: 500;
@@ -184,7 +184,7 @@
     
     animation: animateBox linear forwards;
     animation-timeline: scroll();
-    animation-range: entry 0% exit 60%;
+    animation-range: entry 0% exit 40%;
   } 
 
   .iconned-whybox img {

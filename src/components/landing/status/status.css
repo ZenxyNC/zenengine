@@ -86,6 +86,30 @@
     transform: translateX(-50%);
     position: relative;
   }
+
+  #statusCard-maindiv {
+    width: calc(100% - 30px - 4px);
+    height: max-content;
+    min-height: 100px;
+
+    background-color: var(--primary);
+
+    border: 2px solid var(--secondary);
+    border-radius: 25px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 20px;
+    margin-bottom: 20px;
+
+    z-index: -50;
+
+    animation: animateStatus linear both;
+    animation-timeline: scroll();
+    animation-range: entry 0% exit 60%;
+  }
 }
 
 @media screen and (min-width: 1280px) {
@@ -100,5 +124,28 @@
     left: 50%;
     transform: translateX(-50%);
     position: relative;
+  }
+  #statusCard-maindiv {
+    width: calc(100% - 30px - 4px);
+    height: max-content;
+    min-height: 100px;
+
+    background-color: var(--primary);
+
+    border: 2px solid var(--secondary);
+    border-radius: 25px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 20px;
+    margin-bottom: 20px;
+
+    z-index: -50;
+
+    animation: animateStatus linear both;
+    animation-timeline: scroll();
+    animation-range: entry 0% exit 60%;
   }
 }

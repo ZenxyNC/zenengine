@@ -105,11 +105,11 @@ const VARIANTS = {
     noFocus: false
   },
   blue: {
-    activeColor: "#e0f2fe",
-    gap: 10,
-    speed: 25,
-    colors: "#e0f2fe,#7dd3fc,#0ea5e9",
-    noFocus: false
+    activeColor: "#007AFF",
+    gap: 8,
+    speed: 80,
+    colors: "#F5F5F5,#fda4af,#007AFF",
+    noFocus: true
   },
   yellow: {
     activeColor: "#fef08a",
@@ -261,6 +261,8 @@ export default function PixelCard({
       onFocus={finalNoFocus ? undefined : onFocus}
       onBlur={finalNoFocus ? undefined : onBlur}
       tabIndex={finalNoFocus ? -1 : 0}
+
+      role="button"
     >
       <canvas
         className="pixel-canvas"

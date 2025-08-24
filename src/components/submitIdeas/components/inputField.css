@@ -1,0 +1,9 @@
+#inputField-maindiv {
+  width: 100%;
+  height: max-content;
+  min-height: 100px;
+
+  background-color: var(--secondary);
+
+  border-radius: 20px
+}

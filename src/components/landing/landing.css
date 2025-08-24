@@ -76,3 +76,8 @@
     font-weight: 700;
   }
 }
+
+.light-rays-hidden {
+  visibility: hidden;
+}
+

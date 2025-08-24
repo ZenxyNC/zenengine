@@ -1,4 +1,4 @@
-import { useRef, useEffect, useState } from "react";
+import React, { useRef, useEffect, forwardRef } from "react";
 import { Renderer, Program, Triangle, Mesh } from "ogl";
 import "../landing.css";
 
@@ -37,7 +37,7 @@ const getAnchorAndDir = (origin, w, h) => {
   }
 };
 
-const LightRays = ({
+const LightRays = forwardRef(({
   raysOrigin = "top-center",
   raysColor = DEFAULT_COLOR,
   raysSpeed = 1,
@@ -51,7 +51,7 @@ const LightRays = ({
   noiseAmount = 0.0,
   distortion = 0.0,
   className = "",
-}) => {
+}, ref) => {
   const containerRef = useRef(null);
   const uniformsRef = useRef(null);
   const rendererRef = useRef(null);
@@ -60,32 +60,12 @@ const LightRays = ({
   const animationIdRef = useRef(null);
   const meshRef = useRef(null);
   const cleanupFunctionRef = useRef(null);
-  const [isVisible, setIsVisible] = useState(false);
-  const observerRef = useRef(null);
+
+  // Combine refs
+  React.useImperativeHandle(ref, () => containerRef.current);
 
   useEffect(() => {
     if (!containerRef.current) return;
-
-    observerRef.current = new IntersectionObserver(
-      (entries) => {
-        const entry = entries[0];
-        setIsVisible(entry.isIntersecting);
-      },
-      { threshold: 0.1 }
-    );
-
-    observerRef.current.observe(containerRef.current);
-
-    return () => {
-      if (observerRef.current) {
-        observerRef.current.disconnect();
-        observerRef.current = null;
-      }
-    };
-  }, []);
-
-  useEffect(() => {
-    if (!isVisible || !containerRef.current) return;
 
     if (cleanupFunctionRef.current) {
       cleanupFunctionRef.current();
@@ -341,7 +321,6 @@ void main() {
       }
     };
   }, [
-    isVisible,
     raysOrigin,
     raysColor,
     raysSpeed,
@@ -414,6 +393,9 @@ void main() {
       className={`light-rays-container ${className}`.trim()}
     />
   );
-};
+});
+
+LightRays.displayName = 'LightRays';
 
 export default LightRays;
+
