@@ -1,6 +1,8 @@
 import { useNavigate } from 'react-router-dom';
 import './footer.css';
 
+import zenengine from '../../../../resources/zenengine-noBG.svg'
+
 export default function Footer () {
   var navigate = useNavigate()
 
@@ -20,7 +22,7 @@ export default function Footer () {
         <button onClick={() => directUser("page", "/")}>Home</button>
       </div>
       <div id='footer-zenengine'>
-        <img src='/zenengine-noBG.svg' alt="" />
+        <img src={zenengine} alt="" />
         <span>ZenEngine</span>
       </div>
       <div id='footer-creator-form'>
