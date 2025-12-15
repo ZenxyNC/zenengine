@@ -5,5 +5,117 @@
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-  top: 30px
+  top: 90px;
+  margin-bottom: 60px;
+}
+
+#submitIdeas-head {
+  width: calc(100% - 40px);
+  height: max-content;
+  min-height: 80px;
+
+  background-color: var(--secondary);
+
+  border-radius: 20px;
+
+  padding: 12px 20px 20px 20px
+}
+
+#submitIdeas-head h1 {
+  font-size: 24px;
+  text-align: center;
+}
+
+#submitIdeas-head p {
+  font-size: 16px;
+  font-weight: 500;
+
+  margin-top: 20px
+}
+
+#gradient-name {
+  background: linear-gradient(94deg, #007AFF 21.45%, #0FA 105.91%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#submitIdeas-actions {
+  width: calc(100% - 48px);
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+
+  margin-top: 20px;
+}
+
+#submitIdeas-actions button {
+  min-width: max-content;  
+  font-family: "PlusJakarta";
+  font-size: 16px;
+  font-weight: 600;
+  height: 30px;
+  cursor: pointer
+}
+
+#submitIdeas-actions-clearForm {
+  font-size: 16px;
+  height: 30px;
+  background-color: transparent;
+
+  border: none;
+
+  color: var(--accent-red);
+}
+
+#submitIdeas-actions-submitForm {
+  font-size: 16px;
+  height: 30px;
+  background-color: var(--accent);
+
+  border: none;
+  border-radius: 20px;
+
+  color: var(--font-primary);
+
+  padding: 0px 20px 0px 20px;
+
+}
+
+.submitIdeas-divider {
+  width: 100%;
+  height: 2px;
+  background-color: var(--font-secondary);
+  border-radius: 1px;
+
+  margin-top: 20px
+}
+
+@media screen and (min-width: 810px) {
+  #submitIdeas-maindiv {
+    width: calc(100svw - 60px);
+    max-width: 500px;
+    height: max-content;
+
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 90px;
+    margin-bottom: 90px;
+  }
+  #submitIdeas-head h1 {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  #submitIdeas-head p {
+    font-size: 16px;
+    font-weight: 500;
+
+    margin-top: 20px
+  }
 }

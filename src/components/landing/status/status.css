@@ -42,7 +42,7 @@
 
   animation: animateStatus linear both;
   animation-timeline: scroll();
-  animation-range: entry 0% exit 80%;
+  animation-range: entry 0% exit 60%;
 }
 
 #statusCard-bubble {

@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import './pixelCard.css';
+import { useNavigate } from "react-router-dom";
 
 class Pixel {
   constructor(canvas, context, x, y, color, speed, delay) {
@@ -134,7 +135,8 @@ export default function PixelCard({
   colors,
   noFocus,
   className = "",
-  children
+  children,
+  onClickNav
 }) {
   const containerRef = useRef(null);
   const canvasRef = useRef(null);
@@ -250,6 +252,8 @@ export default function PixelCard({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [finalGap, finalSpeed, finalColors, finalNoFocus]);
 
+  var navigate = useNavigate();
+
   return (
     <div
       ref={containerRef}
@@ -261,6 +265,8 @@ export default function PixelCard({
       onFocus={finalNoFocus ? undefined : onFocus}
       onBlur={finalNoFocus ? undefined : onBlur}
       tabIndex={finalNoFocus ? -1 : 0}
+
+      onClick={(e) => navigate(onClickNav)}
 
       role="button"
     >

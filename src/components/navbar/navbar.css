@@ -10,7 +10,14 @@
 
   backdrop-filter: blur(30px);
 
-  z-index: 9999
+  z-index: 9999;
+  overflow: hidden;
+
+  transition: 0.45s;
+}
+
+#navbar-mainbody.isNavSide {
+  height: 100svh
 }
 
 #navbar-zenengineIcon {
@@ -20,8 +27,7 @@
 
 #navbar-zenengineName { 
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 18px;
 
   font-size: 20px;
   font-family: 'PlusJakarta';
@@ -83,6 +89,39 @@
   transition: 0.35s
 }
 
+#FormNavbar-wrapper {
+  width: 175px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
+  background-color: transparent;
+}
+
+.formnavbar {
+  width: 100svw !important;
+  padding: 0px !important;
+}
+
+#navbar-openNavside {
+  width: 32px;
+  height: 32px;
+  background-color: transparent;
+  border: none;
+
+  position: absolute;
+  right: 20px;
+  top: 12px;
+
+  background-image: url('../../resources/dot-menu.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 36px;
+}
+#navbar-openNavside.isNavSide {
+  background-image: url('../../resources/close.svg');
+}
+
 /*TABLET VIEW*/
 @media screen and (min-width: 810px) {
   #navbar-mainbody {
@@ -98,6 +137,20 @@
     backdrop-filter: blur(30px);
 
     z-index: 9999
+  }
+
+  .formnavbar {
+    width: 100svw !important;
+    padding: 0px !important;
+  }
+
+  #FormNavbar-wrapper {
+    width: 175px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background-color: transparent;
   }
 
   #navbar-zenengineIcon {
@@ -176,7 +229,7 @@
 @media screen and (min-width: 1360px) {
   #navbar-mainbody {
     width: calc(100% - 150px - 150px) /*Viewport - padding left - padding right*/;
-    height: 70px;
+    height: 60px;
     
     background-color: rgba(15, 19, 26, 0.4);
 
@@ -186,11 +239,11 @@
 
     backdrop-filter: blur(30px);
 
-    z-index: 9999
+    z-index: 9999;
   }
 
   #navbar-zenengineIcon {
-    width: 70px;
+    width: 60px;
     aspect-ratio: 1/1;
   }
 
@@ -213,7 +266,7 @@
     transform: translateY(-50%);
 
     width: 160px;
-    height: 40px;
+    height: 35px;
 
     font-size: 16px;
     font-family: 'PlusJakarta';
@@ -257,5 +310,14 @@
     filter: blur(30px);
     opacity: 1;
     transition: 0.35s
+  }
+
+  #FormNavbar-wrapper {
+    width: 220px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background-color: transparent;
   }
 }

@@ -1,0 +1,34 @@
+#navitem-mainbody {
+  display: flex;
+  align-items: center;
+  width: calc(100% - 10px);
+  position: relative;
+  left: 10px;
+  cursor: pointer
+}
+
+#navitem-mainbody span {
+  position: absolute;
+  left: 12px;
+  color: var(--font-secondary);
+  transition: 0.3s;
+}
+
+#navitem-mainbody span.active {
+  position: absolute;
+  left: 20px;
+  color: var(--font-primary);
+}
+
+#navitem-indicator {
+  width: 3px;
+  height: 32px;
+  background-color: var(--font-secondary);
+  transition: 0.3s
+}
+
+#navitem-indicator.active {
+  width: 3px;
+  height: 32px;
+  background-color: var(--font-primary);
+}

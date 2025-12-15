@@ -14,19 +14,18 @@ export default function Footer () {
 
 
   return (
-    <div id="footer-maindiv">
-      <div id='footer-navigation'>
+    <div id="footer-submitideas-maindiv">
+      <div id='footer-navigation-form'>
         <button onClick={() => directUser("page", "/docs")}>Docs</button>
-        <button onClick={() => directUser("scroll", "zenengine-home")}>Back to top</button>
-        <button onClick={() => directUser("page", "/submit-ideas")}>Submit Ideas</button>
+        <button onClick={() => directUser("page", "/")}>Home</button>
       </div>
       <div id='footer-zenengine'>
         <img src='/zenengine-noBG.svg' alt="" />
         <span>ZenEngine</span>
       </div>
-      <div id='footer-creator'>
-        <p id='footerCreator-quotes'>"I forgot my own code, I should make a project for it."</p><br/>
-        - <a 
+      <div id='footer-creator-form'>
+        <p id='footerCreator-quotes'>This form was created on behalf of ZenEngine. Your form answer will only be used by ZenEngine Developer. But to keep your data safety, <span style={{ color: 'var(--accent-red)', fontStyle: 'italic' }}>DO NOT</span> share any private information on this form.</p><br/>
+        Creator : <a 
             href='https://zenxync.github.io/lucasharel'
             target="_blank" 
             rel="noopener noreferrer"

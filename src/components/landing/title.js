@@ -7,6 +7,7 @@ export default function Title({ string, alignment = "center", weight = 700, cust
         textAlign: alignment,
         fontWeight: weight,
       }}
+      id='section-title'
       className = {customClassName}
       dangerouslySetInnerHTML={{ __html : string}}
     />

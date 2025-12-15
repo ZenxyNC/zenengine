@@ -1,10 +1,9 @@
-#footer-maindiv {
+#footer-submitideas-maindiv {
   width: calc(100svw - 60px - 40px);
   height: max-content;
 
   padding: 20px;
   margin-top: 100px;
-  margin-bottom: 30px;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
@@ -13,14 +12,14 @@
   border-radius: 20px
 }
 
-#footer-navigation {
+#footer-navigation-form {
   width: 100%;
 
-  justify-content: space-between;
+  justify-content: space-around;
   display: flex;
 }
 
-#footer-navigation button {
+#footer-navigation-form button {
   font-size: 16px;
   color: var(--font-secondary);
   font-weight: 500;
@@ -36,7 +35,7 @@
   user-select: none;
 }
 
-#footer-navigation button:is(:active) {
+#footer-navigation-form button:is(:active) {
   font-size: 16px;
   color: var(--font-primary);
 
@@ -76,21 +75,20 @@
   font-size: 20px
 }
 
-#footer-creator {
+#footer-creator-form {
   width: 100%;
   font-family: "PlusJakarta";
 
   margin-top: 12px
 }
 
-#footer-creator p {
-  font-style: italic;
+#footer-creator-form p {
   font-size: 16px;
   margin-bottom: -12px;
   font-weight: 500;
 
 }
-#footer-creator a {
+#footer-creator-form a {
   font-size: 20px;
   font-weight: 700;
   color: var(--font-primary);
@@ -103,7 +101,7 @@
   transition: 0.35s;
 }
 
-#footer-creator a:is(:active) {
+#footer-creator-form a:is(:active) {
   font-size: 20px;
   font-weight: 700;
   color: var(--accent);
@@ -121,7 +119,7 @@
 }
 
 @media screen and (min-width: 810px) {
-  #footer-maindiv {
+  #footer-submitideas-maindiv {
     width: calc(100svw - 60px - 40px);
     max-width: 800px;
     height: max-content;
@@ -129,7 +127,6 @@
 
     padding: 20px;
     margin-top: 100px;
-    margin-bottom: 0px;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
@@ -139,7 +136,7 @@
     border-radius: 0px
   }
 
-  #footer-navigation {
+  #footer-navigation-form {
     width: max-content;
 
     justify-content: space-between;
@@ -150,7 +147,7 @@
     right: 20px
   }
 
-  #footer-navigation button:is(:hover, :active) {
+  #footer-navigation-form button:is(:hover, :active) {
     font-size: 16px;
     color: var(--font-primary);
 
@@ -191,7 +188,7 @@
     font-size: 20px
   }
 
-  #footer-creator {
+  #footer-creator-form {
     width: max-content;
     max-width: calc(50% - 60px);
     font-family: "PlusJakarta";
@@ -205,17 +202,16 @@
     margin-top: unset;
   }
 
-  #footer-creator p {
-    font-style: italic;
+  #footer-creator-form p {
     font-size: 16px;
     margin-bottom: -12px
   }
-  #footer-creator a {
+  #footer-creator-form a {
     font-size: 20px;
     font-weight: 700
   }
 
-  #footer-creator a:is(:active, :hover) {
+  #footer-creator-form a:is(:active, :hover) {
     font-size: 20px;
     font-weight: 700;
     color: var(--accent);
@@ -239,15 +235,15 @@
 }
 
 @media screen and (min-width: 1380px) {
-  #footer-maindiv {
+  #footer-submitideas-maindiv {
     width: calc(100svw - 60px - 40px);
     max-width: 1000px;
-    height: max-content;
+    height: 200px;
     min-height: 120px;
 
     padding: 20px;
     margin-top: 100px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
@@ -259,7 +255,7 @@
     background-color: transparent;
   }
 
-  #footer-navigation {
+  #footer-navigation-form {
     width: max-content;
 
     justify-content: space-between;

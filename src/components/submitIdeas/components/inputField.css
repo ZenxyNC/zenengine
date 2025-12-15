@@ -1,9 +1,55 @@
 #inputField-maindiv {
-  width: 100%;
+  width: calc(100% - 40px);
   height: max-content;
-  min-height: 100px;
+  min-height: 80px;
 
   background-color: var(--secondary);
 
-  border-radius: 20px
+  border-radius: 20px;
+
+  padding: 12px 20px 20px 20px;
+
+  margin-top: 20px
 }
+
+#inputField-maindiv h1 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--font-primary);
+}
+
+#inputField-maindiv p {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--accent-red);
+  opacity: 0.5;
+}
+
+#inputField-maindiv textarea,
+#inputField-maindiv input {
+  width: calc(100% - 24px);
+
+  border: none;
+  border-radius: 10px;
+
+  margin-top: 20px;
+
+  padding: 8px 12px 8px 12px;
+
+  background-color: var(--primary);
+
+  color: var(--font-primary);
+  font-family: "PlusJakarta";
+  font-weight: 600;
+  font-size: 14px
+}
+
+#inputField-maindiv input {
+  height: calc(40px - 16px)
+}
+
+#inputField-maindiv textarea {
+  height: calc(140px - 16px);
+  resize: none;
+}
+

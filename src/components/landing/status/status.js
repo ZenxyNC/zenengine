@@ -3,7 +3,7 @@ import StatusCard from "./components/statusCard";
 import Title from "../title";
 
 export default function Status() {
-  const [RNDData, setRNDData] = useState([
+  const [RNDData] = useState([
     {
       projectStatus: "Under development",
       projectName: "Debounce Input",
@@ -25,7 +25,7 @@ export default function Status() {
     <>
       <div id="status-maindiv">
         <Title 
-          string="Status"
+          string="RnD Status"
         />
         {RNDData.map((item, index) => (
         <StatusCard

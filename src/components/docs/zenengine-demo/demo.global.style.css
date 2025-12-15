@@ -1,0 +1,13 @@
+#demo-title {
+  width: 100%;
+  font-size: 32px;
+  color: var(--font-primary)
+}
+
+#demoCode-title {
+  width: calc(100% - 20px);
+  font-size: 32px;
+  color: var(--font-primary);
+  padding-left: 20px;
+  margin-bottom: 8px;
+}
