@@ -3,7 +3,7 @@
   "name": "ZenEngine",
   "icons": [
     {
-      "src": "favicon.svg",
+      "src": "zenengine.svg",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
@@ -13,13 +13,13 @@
       "sizes": "192x192"
     },
     {
-      "src": "favicon.svg",
+      "src": "zenengine.svg",
       "type": "image/png",
       "sizes": "512x512"
     }
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#212832",
-  "background_color": "#212832"
+  "theme_color": "#0F131A",
+  "background_color": "#0F131A"
 }

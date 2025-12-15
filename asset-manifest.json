@@ -1,30 +1,30 @@
 {
   "files": {
-    "main.css": "/zenengine/static/css/main.7a2b1a60.css",
-    "main.js": "/zenengine/static/js/main.5835f837.js",
-    "static/js/453.e9972ca7.chunk.js": "/zenengine/static/js/453.e9972ca7.chunk.js",
+    "main.css": "/zenengine/static/css/main.57e8e781.css",
+    "main.js": "/zenengine/static/js/main.d135200b.js",
+    "static/js/453.e1e7b9f9.chunk.js": "/zenengine/static/js/453.e1e7b9f9.chunk.js",
+    "static/media/PlusJakartaSans-Italic.ttf": "/zenengine/static/media/PlusJakartaSans-Italic.6f6ecc78173fb84f37ef.ttf",
+    "static/media/PlusJakartaSans.ttf": "/zenengine/static/media/PlusJakartaSans.49ea8598eec9394c70ea.ttf",
     "static/media/PlusJakartaSans-SemiBold.ttf": "/zenengine/static/media/PlusJakartaSans-SemiBold.cf92107f36f071f6384c.ttf",
     "static/media/PlusJakartaSans-Medium.ttf": "/zenengine/static/media/PlusJakartaSans-Medium.f78ffc04acb877ce387e.ttf",
     "static/media/PlusJakartaSans-Light.ttf": "/zenengine/static/media/PlusJakartaSans-Light.6c8e1d7ccc92d1bf041b.ttf",
     "static/media/PlusJakartaSans-ExtraBold.ttf": "/zenengine/static/media/PlusJakartaSans-ExtraBold.c3c2ec0cc06a27366227.ttf",
     "static/media/PlusJakartaSans-Bold.ttf": "/zenengine/static/media/PlusJakartaSans-Bold.542d4930de15d99be736.ttf",
     "static/media/PlusJakartaSans-Regular.ttf": "/zenengine/static/media/PlusJakartaSans-Regular.8b8f90ab0e945b1e795a.ttf",
-    "static/media/cog.svg": "/zenengine/static/media/cog.4a724ece4b30815094ed.svg",
-    "static/media/zenengine-noBG.svg": "/zenengine/static/media/zenengine-noBG.d5c7395d37e5e4c9660d.svg",
-    "static/media/docs.svg": "/zenengine/static/media/docs.4686f2587111de0c6b16.svg",
-    "static/media/cleaner-code.svg": "/zenengine/static/media/cleaner-code.d61f4af86799d2a9f6c1.svg",
-    "static/media/menu.svg": "/zenengine/static/media/menu.e750ba286ac24c758b67.svg",
+    "static/media/modules.svg": "/zenengine/static/media/modules.11fbdaebf9feb7a6cbf41c1f1048e544.svg",
+    "static/media/zenengine-noBG.svg": "/zenengine/static/media/zenengine-noBG.bd9c795d6f4042ead701db4510e0cea0.svg",
+    "static/media/copy.svg": "/zenengine/static/media/copy.21d01b7ad623165eaa23a74e5e220ea4.svg",
+    "static/media/dot-menu.svg": "/zenengine/static/media/dot-menu.4927798056e3460d6ffa.svg",
+    "static/media/Clock.svg": "/zenengine/static/media/Clock.572ae5be0f2069f6cdf2e0031610284c.svg",
+    "static/media/close.svg": "/zenengine/static/media/close.6e7bdcda9517b4795e75.svg",
     "index.html": "/zenengine/index.html",
-    "static/media/copy.svg": "/zenengine/static/media/copy.b8a1d00c4a7657875f30.svg",
-    "static/media/modules.svg": "/zenengine/static/media/modules.0c6172859bfed26be2f8.svg",
-    "static/media/arrow 1.svg": "/zenengine/static/media/arrow 1.2a3dedccee3b4d2174e0.svg",
-    "static/media/faster.svg": "/zenengine/static/media/faster.2fad48a8539d64ad12df.svg",
-    "main.7a2b1a60.css.map": "/zenengine/static/css/main.7a2b1a60.css.map",
-    "main.5835f837.js.map": "/zenengine/static/js/main.5835f837.js.map",
-    "453.e9972ca7.chunk.js.map": "/zenengine/static/js/453.e9972ca7.chunk.js.map"
+    "static/media/copy-ok.svg": "/zenengine/static/media/copy-ok.bc8a0116c01e5781f599a454003ceafa.svg",
+    "main.57e8e781.css.map": "/zenengine/static/css/main.57e8e781.css.map",
+    "main.d135200b.js.map": "/zenengine/static/js/main.d135200b.js.map",
+    "453.e1e7b9f9.chunk.js.map": "/zenengine/static/js/453.e1e7b9f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7a2b1a60.css",
-    "static/js/main.5835f837.js"
+    "static/css/main.57e8e781.css",
+    "static/js/main.d135200b.js"
   ]
 }
