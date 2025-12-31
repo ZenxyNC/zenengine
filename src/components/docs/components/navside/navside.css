@@ -79,6 +79,9 @@
   left: 30px;
 }
 
+#docsnavbar-wrapper {
+  cursor: pointer
+}
 
 @media screen and (min-width: 810px) {
   #docsnavbar-mainbody {

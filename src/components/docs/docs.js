@@ -3,10 +3,13 @@ import Navbar from "./components/navside/navbar";
 import NavSide from "./components/navside/navside";
 import './docs.css';
 import './zenengine-demo/demo.global.style.css';
+import NotFound from "./components/navside/404/notfound";
 import { useParams } from "react-router-dom";
 
 // Demo Components
 import SnackbarDemo from "./zenengine-demo/snackbar/snackbar";
+import DebounceInputDemo from "./zenengine-demo/debounce-input/debounce-input";
+import SanitizeStringDemo from "./zenengine-demo/sanitizeString/sanitizeString";
 
 export default function Docs() {
   const { module } = useParams();
@@ -16,6 +19,14 @@ export default function Docs() {
     {
       param: "snackbar",
       component: <SnackbarDemo />
+    },
+    {
+      param: "debounce-input",
+      component: <DebounceInputDemo />
+    },
+    {
+      param: "sanitize-string",
+      component: <SanitizeStringDemo />
     }
   ]
 
@@ -36,15 +47,21 @@ export default function Docs() {
         navSide={navSide}
         setNavSide={setNavSide}
       />
-      <div id="docs-maindiv">
-        <NavSide 
-          navSide={navSide}
-          setNavSide={setNavSide}
-        />
-        <div id="docs-codediv">
-          {findModule(module)}
-        </div>
-      </div>
+      {findModule(module) ? (
+        <>
+          <div id="docs-maindiv">
+            <NavSide 
+              navSide={navSide}
+              setNavSide={setNavSide}
+            />
+            <div id="docs-codediv">
+              {findModule(module)}
+            </div>
+          </div>
+        </>
+      ) : (
+        <NotFound />
+      )}
     </>
   )
 }

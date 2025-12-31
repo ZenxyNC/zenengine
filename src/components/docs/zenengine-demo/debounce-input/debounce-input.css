@@ -1,0 +1,18 @@
+#debounce-input-input {
+  width: 200px;
+  height: 40px;
+  margin-bottom: 12px;
+  margin-top: 4px;
+  padding-left: 8px;
+
+  border-radius: 8px;
+  border: 1px solid rgb(245, 245, 245, 0.1);
+  outline: none;
+
+  background-color: var(--background);
+
+  color: #F5F5F5;
+  caret-color: #F5F5F5;
+  font-family: _medium;
+  font-size: 16px;
+}

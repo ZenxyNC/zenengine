@@ -23,6 +23,8 @@
 #navbar-zenengineIcon {
   width: 60px;
   aspect-ratio: 1/1;
+
+  cursor: pointer;
 }
 
 #navbar-zenengineName { 
@@ -32,6 +34,7 @@
   font-size: 20px;
   font-family: 'PlusJakarta';
   font-weight: 700;
+  cursor: pointer;
 
   background-color: transparent;
 }

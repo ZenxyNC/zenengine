@@ -15,6 +15,10 @@ export default function NavSide({
     {
       param: "debounce-input",
       name: "Debounce Input"
+    },
+    {
+      param: "sanitize-string",
+      name: "Sanitize String"
     }
   ])
 

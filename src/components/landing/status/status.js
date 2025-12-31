@@ -1,25 +1,19 @@
-import { useState } from "react";
 import StatusCard from "./components/statusCard";
 import Title from "../title";
 
 export default function Status() {
-  const [RNDData] = useState([
+  const RNDData = [
     {
-      projectStatus: "Under development",
-      projectName: "Debounce Input",
-      projectDescription : `<i>Wait the user is not finished yet</i>, that's the purpose of Debounce Input. The input component will wait until the user stop typing for certain seconds, then do a function/action.`
+      projectStatus: "Plan",
+      projectName: "Custom Alert",
+      projectDescription : `Stop using old, boring default browser alert. ZenEngine Custom Alert giving you a simple, modern, and premium alert.`
     },
     {
       projectStatus: "Plan",
-      projectName: "State-changes blur",
-      projectDescription : `Blurs giving elegancy, premium, and dynamic feels. What if, you can blurify every element each time they changing?`
-    },
-    {
-      projectStatus: "Update incoming",
-      projectName: "Snackbar",
-      projectDescription : `Snackbar is currently usable, but there are some low level issues : Snackbar font color is unset, inconsistent component naming. Snackbar update is incoming to fix these issues.`
+      projectName: "Click Outside",
+      projectDescription : `Click outside will let you know when the user click outside ap specific element.`
     }
-  ])
+  ]
 
   return (
     <>

@@ -30,7 +30,7 @@ const [snackbar, setSnackbar] = useState({
 >Say Hello!</button>
 
 {snackbar.isOpened && 
-  <SnackbarExample 
+  <Snackbar 
     message={snackbar.message} 
     duration={snackbar.duration} 
     onClose={() => setSnackbar(prevSnackbar => ({
@@ -72,7 +72,7 @@ CSS:`/*Snackbar Styles*/
   z-index: 9999;
 
   position: fixed;
-  bottom: -60px; /*You can change this carefully! Don't forget to change the bottom property on the .snackbar.show as well.*/
+  bottom: -60px; /*You can change this carefully!*/
   right: 15px;  /*Positioned 15px from right by default. Change this based on yuor needs.*/
 
   width: 300px; /*Changable.*/
@@ -87,6 +87,7 @@ CSS:`/*Snackbar Styles*/
 
   font-size: 17px; /*Changable*/
   font-weight: 500; /*Optional, changable*/
+  color: #0F131A
 
   display: grid;
   align-items: center; /*Text is positioned center VERTICALLY by default. Optional, changable.*/
