@@ -11,7 +11,7 @@
 }
 
 .default-whybox {
-  width: calc(100% - (30px + 30px) -(20px + 20px)) /*viewport - (left margin + right margin) -(left padding + right padding)*/;
+  width: calc(100% - (20px + 20px) - 4px) /*viewport - (left margin + right margin) -(left padding + right padding)*/;
   height: max-content;
   min-height: 120px;
 

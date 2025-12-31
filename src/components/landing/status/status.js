@@ -11,7 +11,7 @@ export default function Status() {
     {
       projectStatus: "Plan",
       projectName: "Click Outside",
-      projectDescription : `Click outside will let you know when the user click outside ap specific element.`
+      projectDescription : `Click outside will let you know when the user click outside at specific element.`
     }
   ]
 
