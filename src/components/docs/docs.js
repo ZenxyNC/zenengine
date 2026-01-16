@@ -3,13 +3,14 @@ import Navbar from "./components/navside/navbar";
 import NavSide from "./components/navside/navside";
 import './docs.css';
 import './zenengine-demo/demo.global.style.css';
-import NotFound from "./components/navside/404/notfound";
+import NotFound from "./components/404/notfound";
 import { useParams } from "react-router-dom";
 
 // Demo Components
 import SnackbarDemo from "./zenengine-demo/snackbar/snackbar";
 import DebounceInputDemo from "./zenengine-demo/debounce-input/debounce-input";
 import SanitizeStringDemo from "./zenengine-demo/sanitizeString/sanitizeString";
+import AlertsDemo from "./zenengine-demo/Alerts/alerts";
 
 export default function Docs() {
   const { module } = useParams();
@@ -27,6 +28,10 @@ export default function Docs() {
     {
       param: "sanitize-string",
       component: <SanitizeStringDemo />
+    },
+    {
+      param: "alerts",
+      component: <AlertsDemo />
     }
   ]
 

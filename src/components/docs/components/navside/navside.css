@@ -22,12 +22,13 @@
   background-size: cover;
   background-color: transparent;
 
-  width: 40px;
+  width: 32px;
   aspect-ratio: 1/1;
 
   position: absolute;
   right: 30px;
-  top: 12px;
+  top: 50%;
+  transform: translateY(-50%);
 
   cursor: pointer;
 }

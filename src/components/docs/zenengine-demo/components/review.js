@@ -3,7 +3,7 @@
 export default function Review({ sizeX, sizeY, children }) {
   const customStyle = {
     height: sizeY ? sizeY + 'px' : 'max-content',
-    width: sizeX ? sizeY + 'px' : 'auto'
+    width: sizeX ? sizeX + 'px' : 'auto'
   }
 
   return (

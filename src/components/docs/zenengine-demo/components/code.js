@@ -29,7 +29,14 @@ export default function Code({ children, codeLang = "javascript" }) {
     setIsCopied(true);
     setTimeout(() => setIsCopied(false), 2000);
   }
-  return (
+
+  const getCollapsedCode = (code, maxLines = 12) => {
+    const lines = code.split("\n");
+    if (lines.length <= maxLines) return code;
+    return lines.slice(0, maxLines).join("\n");
+  };
+
+  return codeLang != "bash" ? (
     <>
       <div id="code-mainbody" className={isCollapsed ? "collapsed" : ""}>
         <button id="code-copybutton" onClick={handleCopy} className={isCopied ? "copied" : ""}>
@@ -43,6 +50,22 @@ export default function Code({ children, codeLang = "javascript" }) {
           language={codeLang}
           style={customTheme}
           showLineNumbers={true}
+          className="code-highlighted"
+        >
+          {isCollapsed ? getCollapsedCode(children) : children}
+        </SyntaxHighlighter>
+      </div>
+    </>
+  ) : (
+    <>
+      <div id="code-mainbody" className="bash">
+        <button id="code-copybutton" onClick={handleCopy} className={isCopied ? "copied" : ""}>
+          <img src={!isCopied ? copyIcon : copyOk} alt="" />
+        </button>
+        <SyntaxHighlighter
+          language={codeLang}
+          style={customTheme}
+          showLineNumbers={false}
           className="code-highlighted"
         >
           {children}

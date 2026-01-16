@@ -16,7 +16,7 @@ export default function SeeDocs() {
           onClickNav="/docs/snackbar"
           className="seeDocs-button"
         >
-          <h1 id="SeeDocs-cardContent">See Docs</h1>
+          <h1 id="SeeDocs-cardContent">See Modules</h1>
         </PixelCard>
       </div>
     </>

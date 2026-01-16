@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Landing from './components/landing/landing.js'
 import SubmitIdeas from './components/submitIdeas/submitIdeas.js';
 import Docs from './components/docs/docs.js';
-import NotFound from './components/docs/components/navside/404/notfound.js';
+import NotFound from './components/docs/components/404/notfound.js';
 
 export default function App () {
   return (

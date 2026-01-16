@@ -100,7 +100,13 @@ export default function DebounceInput({ duration, action, ...props }) {
           <Code>
             {codes.call}
           </Code>
-          <h1 id="demoCode-title">JavaScript</h1>
+          <div id="demoCode-header">
+            <h1 id="demoCode-title">JavaScript</h1>
+            <select id="demoCode-select">
+              <option value="css">CSS</option>
+              <option value="tailwind">Tailwind</option>
+            </select>
+          </div>
           <Code>
             {codes.JS}
           </Code>

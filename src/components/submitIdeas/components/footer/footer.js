@@ -4,6 +4,8 @@ import './footer.css';
 import zenengine from '../../../../resources/zenengine-noBG.svg'
 
 export default function Footer () {
+  const date = new Date()
+  const year = date.getFullYear()
   var navigate = useNavigate()
 
   function directUser(method, target) {
@@ -34,7 +36,7 @@ export default function Footer () {
           >Lucas Harel</a>
       </div>
       <div id="footer-license">
-        2025 © ZenEngine. MIT License.
+        {year} © ZenEngine. MIT License.
       </div>
     </div>
   )

@@ -11,3 +11,40 @@
   padding-left: 20px;
   margin-bottom: 8px;
 }
+
+#demoCode-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+#demoCode-select {
+  width: 120px;
+  height: 32px;
+
+  background-color: var(--primary);
+
+  border: 2px solid var(--secondary);
+  border-radius: 20px;
+
+  padding: 0px 12px 0px 12px;
+
+  font-family: _semibold;
+  font-size: 16px;
+  color: var(--font-primary);
+  text-align: left;
+
+  transition: 0.35s;
+
+  cursor: pointer;
+
+  top: 0px;
+  right: 20px;
+  position: absolute;
+}
+
+#demoCode-header select option {
+  background-color: var(--primary);
+  color: var(--font-primary);
+}

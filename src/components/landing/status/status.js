@@ -5,13 +5,13 @@ export default function Status() {
   const RNDData = [
     {
       projectStatus: "Plan",
-      projectName: "Custom Alert",
-      projectDescription : `Stop using old, boring default browser alert. ZenEngine Custom Alert giving you a simple, modern, and premium alert.`
+      projectName: "Gradient Rays",
+      projectDescription : `A gradient ray uses directional color transitions that radiate or flow along a specific path, often creating light-beam or spotlight-like effects with depth and motion.`
     },
     {
       projectStatus: "Plan",
-      projectName: "Click Outside",
-      projectDescription : `Click outside will let you know when the user click outside at specific element.`
+      projectName: "Mesh Gradient",
+      projectDescription : `A mesh gradient blends multiple colors across a grid of control points, allowing smooth, organic color transitions with precise control over color placement.`
     }
   ]
 

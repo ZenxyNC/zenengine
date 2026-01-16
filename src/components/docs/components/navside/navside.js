@@ -19,6 +19,10 @@ export default function NavSide({
     {
       param: "sanitize-string",
       name: "Sanitize String"
+    },
+    {
+      param: "alerts",
+      name: "Alerts"
     }
   ])
 
