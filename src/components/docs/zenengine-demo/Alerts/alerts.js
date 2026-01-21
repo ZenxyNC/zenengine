@@ -40,37 +40,26 @@ import { useEffect, useState } from "react";
 export default function App() {
   const [AlertStructure, setAlertStructure] = useState({
     isOpened: false,
-    type: "input",
-    title: null,
+    type: "success",
+    title: "Operation Success",
+    message: "The operation has been completed successfully.",
     placeholder: "Enter text...",
-    response: {
-      ok: false,
-      object: ""
+    actionOk: () => {
+      console.log("Ok");
+    },
+    actionCancel: () => {
+      console.log("Cancel");
     }
   });
 
 
   function openAlert(type) {
-    setAlertStructure({
+    setAlertStructure(prev => ({
+      ...prev,
       isOpened: true,
-      type: type,
-      title: null,
-      placeholder: "Enter text...",
-      response: {
-        ok: false,
-        object: ""
-      }
-    })
+    }))
   }
 
-  useEffect(() => {
-    if (AlertStructure.response.ok) {
-      // Action to do if user press Ok/Yes
-      console.log(AlertStructure.response.object); // Access input value if the alert type is input
-    } else {
-      // Action to do if user press Cancel/No
-    }
-  }, [AlertStructure.response])
 
   return (
     <ZenEngineAlert
@@ -92,7 +81,7 @@ import {
   IoHelp,
   IoInformation,
   IoExtensionPuzzle
- } from "react-icons/io5";
+} from "react-icons/io5";
 
 export default function ZenEngineAlert({ AlertStructure, setAlertStructure, children }) {
   const [inputValue, setInputValue] = useState("");
@@ -174,11 +163,8 @@ export default function ZenEngineAlert({ AlertStructure, setAlertStructure, chil
     setAlertStructure((prev) => ({
       ...prev,
       isOpened: false,
-      response: {
-        ok: true,
-        object: AlertStructure.type === "input" ? inputValue : null
-      }
     }));
+    AlertStructure.actionOk(inputValue);
   }
 
   function HandleSecondaryButton() {
@@ -186,11 +172,8 @@ export default function ZenEngineAlert({ AlertStructure, setAlertStructure, chil
     setAlertStructure((prev) => ({
       ...prev,
       isOpened: false,
-      response: {
-        ok: false,
-        object: null
-      }
     }));
+    AlertStructure.actionCancel(inputValue);
   }
 
   return (
@@ -518,24 +501,17 @@ export default function ZenEngineAlert({ AlertStructure, setAlertStructure, chil
     setAlertStructure((prev) => ({
       ...prev,
       isOpened: false,
-      response: {
-        ok: true,
-        object: AlertStructure.type === "input" ? inputValue : null
-      }
     }));
-    setInputValue("")
+    AlertStructure.actionOk();
   }
 
   function HandleSecondaryButton() {
+    setInputValue("")
     setAlertStructure((prev) => ({
       ...prev,
       isOpened: false,
-      response: {
-        ok: false,
-        object: null
-      }
     }));
-    setInputValue("")
+    AlertStructure.actionCancel();
   }
 
   return (

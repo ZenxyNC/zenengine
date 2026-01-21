@@ -8,7 +8,7 @@ import { useRef } from 'react';
 
 
 export default function Why() {
-  const availableModule = useRef(3)
+  const availableModule = useRef(4)
 
   return (
     <>
